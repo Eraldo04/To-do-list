@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 150px;
+    background-image: linear-gradient(120deg, rgb(33, 34, 34), rgb(82, 29, 29));
+    color: antiquewhite;
+}
+
+.Menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+select {
+    width: 150px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: rgb(177, 167, 153);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    transition: transform 0.5s;
+}
+
+h1:hover {
+    font-size: 52px;
+    opacity: 50%;
+    transform: translateY(-10px);
+}
+
+form {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+button {
+    padding: 10px;
+    background: rgb(199, 199, 243);
+    border: none;
+}
+
+.doneBtn,
+.removeBtn {
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.doneBtn {
+    background: rgb(10, 190, 10);
+}
+
+button:hover {
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.do {
+    margin: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.do li {
+    flex: 1;
+}
+
+.do-changes {
+    min-width: 33%;
+    list-style-type: none;
+    padding-left: 0 5px;
+}
+
+.fa-check-circle,
+.fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 70%;
+}
